@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Online Minecraft Inventory Editor</title>
+<meta name="description" content="Online Minecraft Inventory Editor - compatible with any browser in any OS! Cheat in Minecraft to stock up on Diamonds, TNT, Tools and Health!"/>
+<meta name="keywords" content="minecraft inventory editor, minecraft inv edit, inventory editor, minecraft, minecraft editor, minecraft cheat, minecraft diamonds, minecraft tnt, minecraft eggs"/>
+<link type="text/css" href="css/mcinvedit/jquery-ui-1.8.9.custom.css" rel="stylesheet"/>
+<link type="text/css" href="css/fileuploader.css" rel="stylesheet"/>
+<link type="text/css" href="css/style.css" rel="stylesheet"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/fileuploader.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div id="inventoryDrop"><div class="dropSpot" id="mark103"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark102"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark101"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark100"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark80"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark81"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark82"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark83"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark9"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark10"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark11"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark12"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark13"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark14"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark15"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark16"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark17"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark18"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark19"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark20"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark21"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark22"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark23"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark24"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark25"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark26"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark27"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark28"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark29"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark30"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark31"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark32"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark33"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark34"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark35"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark0"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark1"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark2"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark3"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark4"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark5"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark6"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark7"><span class="del"></span><span class="qty"></span></div><div class="dropSpot" id="mark8"><span class="del"></span><span class="qty"></span></div></div>
+<h1 id="minecraftHeader">Minecraft Inventory Editor<span>Works with Minecraft 1.3</span></h1>
+<div id="stepsBlock">
+<span id="stepOne">1<p>Save &amp; Close your game! <a id="helpButton" href="#">Need Help?</a></p></span>
+<span id="stepOne">2</span>
+<span id="stepTwo">3<p>Drag Items to Inventory</p></span>
+<span id="stepThree">4</span>
+</div>
+<div id="loadButton">Upload Inventory from level.dat</div>
+<button id="saveButton" DISABLED>Save Inventory</button>
+<div id="galleryTabs">
+<ul>
+<li><a href="#toolGallery">Tools</a></li>
+<li><a href="#armorGallery">Armor</a></li>
+<li><a href="#preciousGallery">Precious</a></li>
+<li><a href="#itemGallery">Items</a></li>
+<li><a href="#blockGallery">Blocks</a></li>
+<li><a href="#mechanicsGallery">Mechanics</a></li>
+<li><a href="#organicGallery">Organics</a></li>
+<li><a href="#dyeGallery">Dyes</a></li>
+</ul>
+<div class="galleryTab" id="toolGallery">
+<div class="draggableNugget"><img src="images/items/276.png" itemid="276" itemcount="1" alt="Diamond Sword"/>Diamond Sword</div>
+<div class="draggableNugget"><img src="images/items/277.png" itemid="277" itemcount="1" alt="Diamond Shovel"/>Diamond Shovel</div>
+<div class="draggableNugget"><img src="images/items/278.png" itemid="278" itemcount="1" alt="Diamond Pickaxe"/>Diamond Pickaxe</div>
+<div class="draggableNugget"><img src="images/items/279.png" itemid="279" itemcount="1" alt="Diamond Axe"/>Diamond Axe</div>
+<div class="draggableNugget"><img src="images/items/293.png" itemid="293" itemcount="1" alt="Diamond Hoe"/>Diamond Hoe</div>
+<div class="draggableNugget"><img src="images/items/267.png" itemid="267" itemcount="1" alt="Iron Sword"/>Iron Sword</div>
+<div class="draggableNugget"><img src="images/items/256.png" itemid="256" itemcount="1" alt="Iron Shovel"/>Iron Shovel</div>
+<div class="draggableNugget"><img src="images/items/257.png" itemid="257" itemcount="1" alt="Iron Pickaxe"/>Iron Pickaxe</div>
+<div class="draggableNugget"><img src="images/items/258.png" itemid="258" itemcount="1" alt="Iron Axe"/>Iron Axe</div>
+<div class="draggableNugget"><img src="images/items/292.png" itemid="292" itemcount="1" alt="Iron Hoe"/>Iron Hoe</div>
+<div class="draggableNugget"><img src="images/items/283.png" itemid="283" itemcount="1" alt="Gold Sword"/>Gold Sword</div>
+<div class="draggableNugget"><img src="images/items/284.png" itemid="284" itemcount="1" alt="Gold Shovel"/>Gold Shovel</div>
+<div class="draggableNugget"><img src="images/items/285.png" itemid="285" itemcount="1" alt="Gold Pickaxe"/>Gold Pickaxe</div>
+<div class="draggableNugget"><img src="images/items/286.png" itemid="286" itemcount="1" alt="Gold Axe"/>Gold Axe</div>
+<div class="draggableNugget"><img src="images/items/294.png" itemid="294" itemcount="1" alt="Gold Hoe"/>Gold Hoe</div>
+<div class="draggableNugget"><img src="images/items/272.png" itemid="272" itemcount="1" alt="Stone Sword"/>Stone Sword</div>
+<div class="draggableNugget"><img src="images/items/273.png" itemid="273" itemcount="1" alt="Stone Shovel"/>Stone Shovel</div>
+<div class="draggableNugget"><img src="images/items/274.png" itemid="274" itemcount="1" alt="Stone Pickaxe"/>Stone Pickaxe</div>
+<div class="draggableNugget"><img src="images/items/275.png" itemid="275" itemcount="1" alt="Stone Axe"/>Stone Axe</div>
+<div class="draggableNugget"><img src="images/items/291.png" itemid="291" itemcount="1" alt="Stone Hoe"/>Stone Hoe</div>
+<div class="draggableNugget"><img src="images/items/268.png" itemid="268" itemcount="1" alt="Wood Sword"/>Wood Sword</div>
+<div class="draggableNugget"><img src="images/items/269.png" itemid="269" itemcount="1" alt="Wood Shovel"/>Wood Shovel</div>
+<div class="draggableNugget"><img src="images/items/270.png" itemid="270" itemcount="1" alt="Wood Pickaxe"/>Wood Pickaxe</div>
+<div class="draggableNugget"><img src="images/items/271.png" itemid="271" itemcount="1" alt="Wood Axe"/>Wood Axe</div>
+<div class="draggableNugget"><img src="images/items/290.png" itemid="290" itemcount="1" alt="Wood Hoe"/>Wood Hoe</div></div>
+<div class="galleryTab" id="armorGallery">
+<div class="draggableNugget"><img src="images/items/310.png" itemid="310" itemcount="1" alt="Diamond Helmet"/>Diamond Helmet</div>
+<div class="draggableNugget"><img src="images/items/311.png" itemid="311" itemcount="1" alt="Diamond Chestplate"/>Diamond Chestplate</div>
+<div class="draggableNugget"><img src="images/items/312.png" itemid="312" itemcount="1" alt="Diamond Pants"/>Diamond Pants</div>
+<div class="draggableNugget"><img src="images/items/313.png" itemid="313" itemcount="1" alt="Diamond Boots"/>Diamond Boots</div>
+<div class="draggableNugget"><img src="images/items/306.png" itemid="306" itemcount="1" alt="Iron Helmet"/>Iron Helmet</div>
+<div class="draggableNugget"><img src="images/items/307.png" itemid="307" itemcount="1" alt="Iron Chestplate"/>Iron Chestplate</div>
+<div class="draggableNugget"><img src="images/items/308.png" itemid="308" itemcount="1" alt="Iron Pants"/>Iron Pants</div>
+<div class="draggableNugget"><img src="images/items/309.png" itemid="309" itemcount="1" alt="Iron Boots"/>Iron Boots</div>
+<div class="draggableNugget"><img src="images/items/314.png" itemid="314" itemcount="1" alt="Gold Helmet"/>Gold Helmet</div>
+<div class="draggableNugget"><img src="images/items/315.png" itemid="315" itemcount="1" alt="Gold Chestplate"/>Gold Chestplate</div>
+<div class="draggableNugget"><img src="images/items/316.png" itemid="316" itemcount="1" alt="Gold Pants"/>Gold Pants</div>
+<div class="draggableNugget"><img src="images/items/317.png" itemid="317" itemcount="1" alt="Gold Boots"/>Gold Boots</div>
+<div class="draggableNugget"><img src="images/items/302.png" itemid="302" itemcount="1" alt="Chainmail Helmet"/>Chainmail Helmet</div>
+<div class="draggableNugget"><img src="images/items/303.png" itemid="303" itemcount="1" alt="Chainmail Chestplate"/>Chainmail Chestplate</div>
+<div class="draggableNugget"><img src="images/items/304.png" itemid="304" itemcount="1" alt="Chainmail Pants"/>Chainmail Pants</div>
+<div class="draggableNugget"><img src="images/items/305.png" itemid="305" itemcount="1" alt="Chainmail Boots"/>Chainmail Boots</div>
+<div class="draggableNugget"><img src="images/items/298.png" itemid="298" itemcount="1" alt="Leather Helmet"/>Leather Helmet</div>
+<div class="draggableNugget"><img src="images/items/299.png" itemid="299" itemcount="1" alt="Leather Chestplate"/>Leather Chestplate</div>
+<div class="draggableNugget"><img src="images/items/300.png" itemid="300" itemcount="1" alt="Leather Pants"/>Leather Pants</div>
+<div class="draggableNugget"><img src="images/items/301.png" itemid="301" itemcount="1" alt="Leather Boots"/>Leather Boots</div></div>
+<div class="galleryTab" id="preciousGallery">
+<div class="draggableNugget"><img src="images/items/57.png" itemid="57" itemcount="64" alt="Diamond Block"/>Diamond Block</div>
+<div class="draggableNugget"><img src="images/items/41.png" itemid="41" itemcount="64" alt="Gold Block"/>Gold Block</div>
+<div class="draggableNugget"><img src="images/items/42.png" itemid="42" itemcount="64" alt="Iron Block"/>Iron Block</div>
+<div class="draggableNugget"><img src="images/items/331.png" itemid="331" itemcount="64" alt="Redstone Dust"/>Redstone Dust</div>
+<div class="draggableNugget"><img src="images/items/348.png" itemid="348" itemcount="64" alt="Lightstone Dust"/>Lightstone Dust</div>
+<div class="draggableNugget"><img src="images/items/264.png" itemid="264" itemcount="64" alt="Diamond"/>Diamond</div>
+<div class="draggableNugget"><img src="images/items/266.png" itemid="266" itemcount="64" alt="Gold Bar"/>Gold Bar</div>
+<div class="draggableNugget"><img src="images/items/265.png" itemid="265" itemcount="64" alt="Iron Bar"/>Iron Bar</div>
+<div class="draggableNugget"><img src="images/items/263.png" itemid="263" itemcount="64" alt="Coal"/>Coal</div>
+<div class="draggableNugget"><img src="images/items/289.png" itemid="289" itemcount="64" alt="Gunpowder"/>Gunpowder</div>
+<div class="draggableNugget"><img src="images/items/318.png" itemid="318" itemcount="64" alt="Flint"/>Flint</div>
+<div class="draggableNugget"><img src="images/items/336.png" itemid="336" itemcount="64" alt="Brick"/>Brick</div>
+<div class="draggableNugget"><img src="images/items/337.png" itemid="337" itemcount="64" alt="Clay"/>Clay</div></div>
+<div class="galleryTab" id="itemGallery">
+<div class="draggableNugget"><img src="images/items/58.png" itemid="58" itemcount="1" alt="Workbench"/>Workbench</div>
+<div class="draggableNugget"><img src="images/items/54.png" itemid="54" itemcount="1" alt="Chest"/>Chest</div>
+<div class="draggableNugget"><img src="images/items/61.png" itemid="61" itemcount="1" alt="Furnace"/>Furnace</div>
+<div class="draggableNugget"><img src="images/items/345.png" itemid="345" itemcount="1" alt="Compass"/>Compass</div>
+<div class="draggableNugget"><img src="images/items/347.png" itemid="347" itemcount="1" alt="Watch"/>Watch</div>
+<div class="draggableNugget"><img src="images/items/325.png" itemid="325" itemcount="1" alt="Bucket"/>Bucket</div>
+<div class="draggableNugget"><img src="images/items/326.png" itemid="326" itemcount="1" alt="Water Bucket"/>Water Bucket</div>
+<div class="draggableNugget"><img src="images/items/327.png" itemid="327" itemcount="1" alt="Lava Bucket"/>Lava Bucket</div>
+<div class="draggableNugget"><img src="images/items/335.png" itemid="335" itemcount="1" alt="Milk Bucket"/>Milk Bucket</div>
+<div class="draggableNugget"><img src="images/items/46.png" itemid="46" itemcount="64" alt="TNT"/>TNT</div>
+<div class="draggableNugget"><img src="images/items/50.png" itemid="50" itemcount="64" alt="Torch"/>Torch</div>
+<div class="draggableNugget"><img src="images/items/76.png" itemid="76" itemcount="64" alt="Redstone Torch"/>Redstone Torch</div>
+<div class="draggableNugget"><img src="images/items/280.png" itemid="280" itemcount="64" alt="Stick"/>Stick</div>
+<div class="draggableNugget"><img src="images/items/287.png" itemid="287" itemcount="64" alt="String"/>String</div>
+<div class="draggableNugget"><img src="images/items/288.png" itemid="288" itemcount="64" alt="Feather"/>Feather</div>
+<div class="draggableNugget"><img src="images/items/321.png" itemid="321" itemcount="1" alt="Painting"/>Painting</div>
+<div class="draggableNugget"><img src="images/items/68.png" itemid="68" itemcount="1" alt="Wall Sign"/>Wall Sign</div>
+<div class="draggableNugget"><img src="images/items/323.png" itemid="323" itemcount="1" alt="Sign"/>Sign</div>
+<div class="draggableNugget"><img src="images/items/329.png" itemid="329" itemcount="1" alt="Saddle"/>Saddle</div>
+<div class="draggableNugget"><img src="images/items/334.png" itemid="334" itemcount="64" alt="Leather"/>Leather</div>
+<div class="draggableNugget"><img src="images/items/339.png" itemid="339" itemcount="64" alt="Paper"/>Paper</div>
+<div class="draggableNugget"><img src="images/items/340.png" itemid="340" itemcount="64" alt="Book"/>Book</div>
+<div class="draggableNugget"><img src="images/items/47.png" itemid="47" itemcount="64" alt="Bookshelf"/>Bookshelf</div>
+<div class="draggableNugget"><img src="images/items/84.png" itemid="84" itemcount="1" alt="Jukebox"/>Jukebox</div>
+<div class="draggableNugget"><img src="images/items/2256.png" itemid="2256" itemcount="1" alt="Gold Record"/>Gold Record</div>
+<div class="draggableNugget"><img src="images/items/2257.png" itemid="2257" itemcount="1" alt="Green Record"/>Green Record</div>
+<div class="draggableNugget"><img src="images/items/261.png" itemid="261" itemcount="1" alt="Bow"/>Bow</div>
+<div class="draggableNugget"><img src="images/items/262.png" itemid="262" itemcount="64" alt="Arrow"/>Arrow</div>
+<div class="draggableNugget"><img src="images/items/346.png" itemid="346" itemcount="1" alt="Fishing Rod"/>Fishing Rod</div>
+<div class="draggableNugget"><img src="images/items/259.png" itemid="259" itemcount="1" alt="Flint and Steel"/>Flint and Steel</div></div>
+<div class="galleryTab" id="blockGallery">
+<div class="draggableNugget"><img src="images/items/1.png" itemid="1" itemcount="64" alt="Stone"/>Stone</div>
+<div class="draggableNugget"><img src="images/items/2.png" itemid="2" itemcount="64" alt="Grass"/>Grass</div>
+<div class="draggableNugget"><img src="images/items/3.png" itemid="3" itemcount="64" alt="Dirt"/>Dirt</div>
+<div class="draggableNugget"><img src="images/items/60.png" itemid="60" itemcount="64" alt="Soil"/>Soil</div>
+<div class="draggableNugget"><img src="images/items/12.png" itemid="12" itemcount="64" alt="Sand"/>Sand</div>
+<div class="draggableNugget"><img src="images/items/13.png" itemid="13" itemcount="64" alt="Gravel"/>Gravel</div>
+<div class="draggableNugget"><img src="images/items/80.png" itemid="80" itemcount="64" alt="Snow Block"/>Snow Block</div>
+<div class="draggableNugget"><img src="images/items/82.png" itemid="82" itemcount="64" alt="Clay Block"/>Clay Block</div>
+<div class="draggableNugget"><img src="images/items/17.png" itemid="17" itemcount="64" alt="Tree"/>Tree</div>
+<div class="draggableNugget"><img src="images/items/5.png" itemid="5" itemcount="64" alt="Wood"/>Wood</div>
+<div class="draggableNugget"><img src="images/items/4.png" itemid="4" itemcount="64" alt="Cobblestone"/>Cobblestone</div>
+<div class="draggableNugget"><img src="images/items/48.png" itemid="48" itemcount="64" alt="Mossy Cobblestone"/>Mossy Cobblestone</div>
+<div class="draggableNugget"><img src="images/items/45.png" itemid="45" itemcount="64" alt="Brick"/>Brick</div>
+<div class="draggableNugget"><img src="images/items/49.png" itemid="49" itemcount="64" alt="Obsidian"/>Obsidian</div>
+<div class="draggableNugget"><img src="images/items/87.png" itemid="87" itemcount="64" alt="Netherstone"/>Netherstone</div>
+<div class="draggableNugget"><img src="images/items/88.png" itemid="88" itemcount="64" alt="Slow Sand"/>Slow Sand</div>
+<div class="draggableNugget"><img src="images/items/89.png" itemid="89" itemcount="64" alt="Lightstone"/>Lightstone</div>
+<div class="draggableNugget"><img src="images/items/8.png" itemid="8" itemcount="64" alt="Water"/>Water</div>
+<div class="draggableNugget"><img src="images/items/10.png" itemid="10" itemcount="64" alt="Lava"/>Lava</div>
+<div class="draggableNugget"><img src="images/items/18.png" itemid="18" itemcount="64" alt="Leaves"/>Leaves</div>
+<div class="draggableNugget"><img src="images/items/19.png" itemid="19" itemcount="64" alt="Sponge"/>Sponge</div>
+<div class="draggableNugget"><img src="images/items/20.png" itemid="20" itemcount="64" alt="Glass"/>Glass</div>
+<div class="draggableNugget"><img src="images/items/35.png" itemid="35" itemcount="64" alt="Wool"/>Wool</div>
+<div class="draggableNugget"><img src="images/items/44.png" itemid="44" itemcount="64" alt="Stone Slab"/>Stone Slab</div>
+<div class="draggableNugget"><img src="images/items/43.png" itemid="43" itemcount="64" alt="Double Stone Slab"/>Double Stone Slab</div>
+<div class="draggableNugget"><img src="images/items/51.png" itemid="51" itemcount="64" alt="Fire"/>Fire</div>
+<div class="draggableNugget"><img src="images/items/90.png" itemid="90" itemcount="64" alt="Portal"/>Portal</div>
+<div class="draggableNugget"><img src="images/items/52.png" itemid="52" itemcount="64" alt="Pig Spawner"/>Pig Spawner</div>
+<div class="draggableNugget"><img src="images/items/67.png" itemid="67" itemcount="64" alt="Cobblestone Stairs"/>Cobblestone Stairs</div>
+<div class="draggableNugget"><img src="images/items/53.png" itemid="53" itemcount="64" alt="Wood Stairs"/>Wood Stairs</div>
+<div class="draggableNugget"><img src="images/items/85.png" itemid="85" itemcount="64" alt="Fence"/>Fence</div></div>
+<div class="galleryTab" id="mechanicsGallery">
+<div class="draggableNugget"><img src="images/items/23.png" itemid="23" itemcount="64" alt="Dispenser"/>Dispenser</div>
+<div class="draggableNugget"><img src="images/items/330.png" itemid="330" itemcount="1" alt="Iron Door"/>Iron Door</div>
+<div class="draggableNugget"><img src="images/items/324.png" itemid="324" itemcount="1" alt="Wood Door"/>Wood Door</div>
+<div class="draggableNugget"><img src="images/items/77.png" itemid="77" itemcount="64" alt="Button"/>Button</div>
+<div class="draggableNugget"><img src="images/items/69.png" itemid="69" itemcount="64" alt="Lever"/>Lever</div>
+<div class="draggableNugget"><img src="images/items/70.png" itemid="70" itemcount="64" alt="Rock Pressure Plate"/>Rock Pressure Plate</div>
+<div class="draggableNugget"><img src="images/items/72.png" itemid="72" itemcount="64" alt="Wood Pressure Plate"/>Wood Pressure Plate</div>
+<div class="draggableNugget"><img src="images/items/328.png" itemid="328" itemcount="1" alt="Minecart"/>Minecart</div>
+<div class="draggableNugget"><img src="images/items/342.png" itemid="342" itemcount="1" alt="Storage Minecart"/>Storage Minecart</div>
+<div class="draggableNugget"><img src="images/items/343.png" itemid="343" itemcount="1" alt="Powered Minecart"/>Powered Minecart</div>
+<div class="draggableNugget"><img src="images/items/333.png" itemid="333" itemcount="1" alt="Boat"/>Boat</div>
+<div class="draggableNugget"><img src="images/items/66.png" itemid="66" itemcount="64" alt="Minecart Rails"/>Minecart Rails</div>
+<div class="draggableNugget"><img src="images/items/65.png" itemid="65" itemcount="64" alt="Ladder"/>Ladder</div></div>
+<div class="galleryTab" id="organicGallery">
+<div class="draggableNugget"><img src="images/items/319.png" itemid="319" itemcount="64" alt="Meat"/>Meat</div>
+<div class="draggableNugget"><img src="images/items/320.png" itemid="320" itemcount="64" alt="Cooked Meat"/>Cooked Meat</div>
+<div class="draggableNugget"><img src="images/items/349.png" itemid="349" itemcount="64" alt="Fish"/>Fish</div>
+<div class="draggableNugget"><img src="images/items/350.png" itemid="350" itemcount="64" alt="Cooked Fish"/>Cooked Fish</div>
+<div class="draggableNugget"><img src="images/items/260.png" itemid="260" itemcount="64" alt="Apple"/>Apple</div>
+<div class="draggableNugget"><img src="images/items/322.png" itemid="322" itemcount="64" alt="Golden Apple"/>Golden Apple</div>
+<div class="draggableNugget"><img src="images/items/6.png" itemid="6" itemcount="64" alt="Sapling"/>Sapling</div>
+<div class="draggableNugget"><img src="images/items/37.png" itemid="37" itemcount="64" alt="Flower"/>Flower</div>
+<div class="draggableNugget"><img src="images/items/38.png" itemid="38" itemcount="64" alt="Rose"/>Rose</div>
+<div class="draggableNugget"><img src="images/items/39.png" itemid="39" itemcount="64" alt="Brown Mushroom"/>Brown Mushroom</div>
+<div class="draggableNugget"><img src="images/items/40.png" itemid="40" itemcount="64" alt="Red Mushroom"/>Red Mushroom</div>
+<div class="draggableNugget"><img src="images/items/59.png" itemid="59" itemcount="64" alt="Crop"/>Crop</div>
+<div class="draggableNugget"><img src="images/items/81.png" itemid="81" itemcount="64" alt="Cactus"/>Cactus</div>
+<div class="draggableNugget"><img src="images/items/83.png" itemid="83" itemcount="64" alt="Reed Block"/>Reed Block</div>
+<div class="draggableNugget"><img src="images/items/338.png" itemid="338" itemcount="64" alt="Sugar Cane"/>Sugar Cane</div>
+<div class="draggableNugget"><img src="images/items/353.png" itemid="353" itemcount="64" alt="Sugar"/>Sugar</div>
+<div class="draggableNugget"><img src="images/items/354.png" itemid="354" itemcount="64" alt="Cake"/>Cake</div>
+<div class="draggableNugget"><img src="images/items/295.png" itemid="295" itemcount="64" alt="Seeds"/>Seeds</div>
+<div class="draggableNugget"><img src="images/items/296.png" itemid="296" itemcount="64" alt="Wheat"/>Wheat</div>
+<div class="draggableNugget"><img src="images/items/297.png" itemid="297" itemcount="64" alt="Bread"/>Bread</div>
+<div class="draggableNugget"><img src="images/items/344.png" itemid="344" itemcount="64" alt="Egg"/>Egg</div>
+<div class="draggableNugget"><img src="images/items/281.png" itemid="281" itemcount="64" alt="Bowl"/>Bowl</div>
+<div class="draggableNugget"><img src="images/items/282.png" itemid="282" itemcount="64" alt="Bowl with Soup"/>Bowl with Soup</div>
+<div class="draggableNugget"><img src="images/items/341.png" itemid="341" itemcount="64" alt="Slime Ball"/>Slime Ball</div>
+<div class="draggableNugget"><img src="images/items/332.png" itemid="332" itemcount="64" alt="Snowball"/>Snowball</div>
+<div class="draggableNugget"><img src="images/items/86.png" itemid="86" itemcount="64" alt="Pumpkin"/>Pumpkin</div>
+<div class="draggableNugget"><img src="images/items/91.png" itemid="91" itemcount="64" alt="Jack-o-Lantern"/>Jack-o-Lantern</div>
+<div class="draggableNugget"><img src="images/items/352.png" itemid="352" itemcount="64" alt="Bone"/>Bone</div></div>
+<div class="galleryTab" id="dyeGallery">
+<div class="draggableNugget"><img src="images/items/351.png" itemid="351" itemcount="64" alt="Ink Sac"/>Ink Sac</div>
+<div class="draggableNugget"><img src="images/items/35.png" itemid="35" itemcount="64" alt="Wool"/>Wool</div>
+<div class="draggableNugget"><img src="images/items/21.png" itemid="21" itemcount="64" alt="Lapis Lazuli Ore"/>Lapis Lazuli Ore</div></div>
+</div>
+<div id="dialogBox"></div>
+<div id="helpBox">
+<h1>Minecraft Inventory Editor Help</h1>
+<p>Watch the <a href="http://www.youtube.com/watch?v=YHUHlaS-F7c" target="_blank">Minecraft Inventory Editor Demo Video</a>.</p>
+<p>First, make sure you understand that this is BETA software... if you cherish your saved game, then <em>back it up</em> before you go messing with half-baked software.</p>
+<p>Click the 'Upload Inventory...' button. You'll need to locate your saved game folder to locate the 'level.dat' file. Replace "<em>Username</em>" with your OS username.</p>
+<p><b>Mac OS:</b><span>/Users/<i>Username</i>/Library/Application Support/minecraft/saves/</span></p>
+<p><b>Windows:</b><span>C:\Users\<i>Username</i>\AppData\Roaming\.minecraft\saves\</span></p>
+<p><b>Linux:</b><span>/home/<i>Username</i>/.minecraft/saves/</span></p>
+<p>After your inventory loads and you see your current inventory, you can drag items from the right set of tabs to your inventory slots.</p>
+<p>Click 'Save Inventory' to download modified save file which you must use to overwrite your existing 'level.dat' with. Don't worry about the crazy filename, it's a unique identifier for your download!</p>
+<p><em>Remember! Minecraft saves it's own emergency backup titled 'level.dat_old' - use it wisely!</em></p>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-284445-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
